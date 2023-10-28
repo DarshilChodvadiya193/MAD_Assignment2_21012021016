@@ -7,6 +7,12 @@ android {
     namespace = "com.example.mad_assignment2_21012021016"
     compileSdk = 33
 
+    buildFeatures {
+        viewBinding {
+            var enabled = true
+        }
+    }
+
     defaultConfig {
         applicationId = "com.example.mad_assignment2_21012021016"
         minSdk = 24
@@ -44,7 +50,13 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //lotti animation
     implementation ("com.airbnb.android:lottie:6.1.0")
+    // GSON converter -use to data convert and use it
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    // retrofit - API ke data ko fetch karege
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 
 
 }
