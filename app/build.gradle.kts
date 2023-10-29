@@ -8,9 +8,7 @@ android {
     compileSdk = 33
 
     buildFeatures {
-        viewBinding {
-            var enabled = true
-        }
+        viewBinding=true
     }
 
     defaultConfig {
@@ -57,6 +55,8 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     // retrofit - API ke data ko fetch karege
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
+
+
 
 
 }
